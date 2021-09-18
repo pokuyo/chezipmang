@@ -1,0 +1,31 @@
+#server
+server:
+  port: 4000
+  servlet:
+    session:
+      timeout: 60m
+    encoding:
+      charset: UTF-8
+  tomcat:
+    connection-timeout: 60m
+
+#spring
+spring:
+  session:
+    timeout: 60m    
+  devtools:
+    livereload:
+      enabled: false
+  thymeleaf:
+    enabled: true
+    encoding: UTF-8
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    order: 0
+    # dev: false, prod: true 로 설정되어야 함
+    cache: false
+
+#mybatis
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml

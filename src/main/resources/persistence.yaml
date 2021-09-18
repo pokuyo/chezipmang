@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/chezipmang?serverTimezone=Asia/Seoul&characterEncoding=utf8&allowMultiQueries=true&autoReconnect=true
+    username: chezipmang
+    password: 123456
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy

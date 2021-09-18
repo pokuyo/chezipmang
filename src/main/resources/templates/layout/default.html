@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8"/>
+
+<head th:replace="fragments/header :: headerFragment">
+	<title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">CHEZIPMANG</title>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+
+<div class="wrapper">
+	
+	<nav th:replace='fragments/navi :: naviFragment'></nav>
+	
+	<aside th:replace='fragments/gnb :: gnbFragment' class='navbar'></aside>
+	
+	<div layout:fragment="content"></div>
+	
+	<footer th:replace='fragments/footer :: footerFragment'></footer>
+	
+	<aside th:replace='fragments/controll :: controllFragment'></aside>
+</div>
+	
+</body>
+</html>
